@@ -57,22 +57,22 @@ def get_local_configuration(environment: str) -> dict:
     """
     local_mapping = {
         DEPLOYMENT: {
-            ACCOUNT_ID: '',
-            REGION: 'us-east-2',
-            GITHUB_REPOSITORY_OWNER_NAME: '',
-            GITHUB_REPOSITORY_NAME: '',
+            ACCOUNT_ID: '956067727513',
+            REGION: 'eu-central-1',
+            GITHUB_REPOSITORY_OWNER_NAME: 'mohade09',
+            GITHUB_REPOSITORY_NAME: 'aws-cdk-pipeline-dl-etl',
             # This is used in the Logical Id of CloudFormation resources.
             # We recommend Capital case for consistency.
             # Example: DataLakeCdkBlog
-            LOGICAL_ID_PREFIX: '',
+            LOGICAL_ID_PREFIX: 'DataLakeCdk',
             # Important: This is used in resources that must be **globally** unique!
             # Resource names may only contain Alphanumeric and hyphens and cannot contain trailing hyphens.
             # Example: unique-identifier-data-lake
-            RESOURCE_NAME_PREFIX: '',
+            RESOURCE_NAME_PREFIX: 'cdke2e',
         },
         DEV: {
-            ACCOUNT_ID: '',
-            REGION: 'us-east-2',
+            ACCOUNT_ID: '237276291360',
+            REGION: 'eu-central-1',
             VPC_CIDR: '10.20.0.0/24'
         },
         TEST: {
